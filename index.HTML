@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Studio</title>
+  <style>
+/* Scroll Reveal Animation */
+.animate {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: all 0.9s ease;
+}
+
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(250, 204, 21, 0.25);
+}
+
+
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #facc15;
+  }
+  100% {
+    text-shadow: 0 0 25px #facc15, 0 0 40px #facc15;
+  }
+}
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  top: 0;
+  left: -100%;
+  transition: left 0.4s;
+}
+
+button:hover::after {
+  left: 100%;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b0b0f;
+      color: #f5f5f5;
+    }
+    
+        }
+header {
+      background: linear-gradient(135deg, #111827, #020617);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 2px;
+      margin: 0;
+      color: #facc15;
+    }
+    
+
+        <style>
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#typing-title::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #9d7058;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b08e7a;
+        }
+header p {
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    nav {
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #facc15;
+    }
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 24px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    button {
+      background: #facc15;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <h1><center>ROYAL STUDIO</center></h1>
+    <p><center>• Creative • Photography • Graphic Design • Videography </center></p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#Packages">Packages</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Royal Studio</h2>
+    <p>
+      Royal Studio is a creative space dedicated to capturing moments, designing visuals,
+      and creating timeless memories. We blend passion, creativity, and professionalism
+      to deliver royal-quality results.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Photography</h3>
+        <p>Wedding, portrait, event, and outdoor photography with a royal touch.</p>
+      </div>
+      <div class="card">
+        <h3>Videography</h3>
+        <p>High-quality cinematic videos for events, ads, and special occasions.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>Posters, logos, albums, and creative designs that stand out.</p>
+      </div>
+<div class="card">
+        <h3>Social Media</h3>
+        <p>Socialmedia posting,socialmedia managing to make your work easy.</p>
+      </div>
+ <div class="card">
+        <h3>AI Marketing</h3>
+        <p>AI branding,ai content videos,ai content creation that creates your brand the first.</p>
+      </div>
+<div class="card">
+        <h3>Branding</h3>
+        <p>Branding Videos with live characters,live ads,animated branding videos to make your brand the best brand.</p>
+      </div>
+
+      
+<div class="card">
+        <h3>Web Design</h3>
+        <p>Website designing, web managing, webpage designing with royal finishing.</p>
+      </div>
+
+      <div class="card">
+        <h3>Editing</h3>
+        <p>Professional photo and video editing with premium finishing.</p>
+      </div>
+    </div>
+<section id="Packages">
+<h2>Packages</h2> 
+<h2>Logo Packages</h2>
+ <div class="cards">
+      <div class="card">
+        <h3>Basic Logo Design</h3>
+        <p>• 2 Logos.</p>
+        <p>• 3 Redits.</p>
+<p>•Jpeg file</p>
+<h3>• Rs.2000</h3>
+      </div>
+<div class="card">
+        <h3>Advanced Logo Design</h3>
+        <p>•5 Logos.</p>
+        <p>•6 Redits.</p>
+ <p>•Jpeg,png file.</p>
+<h3>•Rs.5000</h3>
+      </div>
+<div class="card">
+        <h3>Pro Logo Design</h3>
+        <p>•8 Logos.</p>
+        <p>•Unlimited Redits.</p>
+ <p>•Jpeg,png,3d mockup file.</p>
+<h3>•Rs.10000</h3>
+      </div>
+
+ </section>
+<h2>AI Content Packages</h2>
+ <div class="cards">
+      <div class="card">
+        <h3>AI Content Video</h3>
+        <p>• 30s video with voice.</p>
+        <p>• 3 Redits.</p>
+<p>•Mp4 file</p>
+<h3>• Rs.2000</h3>
+      </div>
+<div class="card">
+        <h3>AI Branding Video</h3>
+        <p>• 30s Branding video with voice.</p>
+        <p>• 4 Redits.</p>
+<p>•Mp4 file</p>
+<h3>• Rs.2500</h3>
+      </div>
+</section>
+
+<section>
+<h2>Live character branding video</h2>
+ <div class="cards">
+      <div class="card">
+        <h3>Live character video</h3>
+        <p>• 30s video with voice.</p>
+<p>• Single character
+        <p>• 5 Redits.</p>
+<p>• Mp4 file</p>
+<h3>• Rs.8000</h3>
+      </div>
+<div class="cards">
+      <div class="card">
+        <h3>Live character video</h3>
+        <p>• 2min video with voice.</p>
+<p>• Two characters 
+        <p>• 5 Redits.</p>
+<p>• Mp4 file</p>
+<h3>• Rs.12000</h3>
+      </div>
+</section>
+
+<section>
+<h2>Web design</h2>
+ 
+ <div class="cards">
+      <div class="card">
+        <h3>Basic Web-site</h3>
+<p>• Free Publish</p>        
+<p>• Cloud Storage</p>
+        <p>• Only-Admin control.</p>
+<h3>• Rs.7000</h3>
+      </div>
+<div class="cards">
+      <div class="card">
+        <h3>Advanced Web-site</h3>
+        <p>• Free license </p>
+<p>• Free Publish</p>
+<p>• Cloud Storage</p>
+        <p>• Only-Admin control.</p>
+<p>• AI Manager</p>
+<h3>• Rs.10000</h3>
+      </div>
+
+<div class="cards">
+      <div class="card">
+        <h3> Pro AI Web-site</h3>
+        <p>• With AI Bots.</p>
+<p>• Free license </p>
+<p>• Free Publish</p>
+<p>• Cloud Storage</p>
+        <p>• Only-Admin control.</p>
+<p>• AI Manager</p>
+<h3>• Rs.12000</h3>
+      </div>
+</section>
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>Our latest works will be showcased here. (You can add images easily)</p>
+    <button>Add Images</button>
+  </section>
+
+
+
+ 
+
+  <section id="contact">
+  
+ 
+<h2>Contact Us</h2>
+    <p>
+      📞 Phone: 0740398190/0778772922/0725285599 <br />
+             📧 Email: royalstudio@email.com <br />
+      📍 Location:Godakawela,Sri Lanka
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Royal Studio. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
